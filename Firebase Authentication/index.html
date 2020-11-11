@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <title>Firebase Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCIb0BwFQzR02W3gl2pt0jVEJGEzbX1N7k",
+          authDomain: "login-69c95.firebaseapp.com",
+          databaseURL: "https://login-69c95.firebaseio.com",
+          projectId: "login-69c95",
+          storageBucket: "login-69c95.appspot.com",
+          messagingSenderId: "706877667973",
+          appId: "1:706877667973:web:6cb10cfd7ac72996cd47ec"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+<!-- ===================sign up======================================= -->
+
+    <div>
+        <label for="fname">Email:</label><br>
+        <input type="email" id="Email"name="email"><br><br>
+
+
+
+
+        <label for="lname">password:</label><br>
+        <input type="password" id="password"><br><br>
+        <input type="submit" value="sign up" onclick="signup()">
+    </div>
+
+<!-- ===================log in ======================================= -->
+
+
+<br><br><br><br>
+
+    <div>
+      <label for="fname">Email:</label><br>
+      <input type="email" id="Emaillog"name="email"><br><br>
+
+
+
+
+      <label for="lname">password:</label><br>
+      <input type="password" id="passwordlog"><br><br>
+      <input type="submit" value="Log in" onclick="login()">
+  </div>
+    
+      <script src="app.js"></script>
+</body>
+</html>
